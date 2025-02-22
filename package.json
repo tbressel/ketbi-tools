@@ -1,0 +1,13 @@
+{
+  "name": "ketbi-tools",
+  "version": "1.1.1",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "front end tools created for ketbi projects"
+}
