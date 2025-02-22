@@ -14,10 +14,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Fixed
 - Fixed a bug where the custom cursor did not correctly follow the mouse on some browsers.
+_____
 
-## [1.0.0] - 2023-10-01
 
+
+
+
+
+
+
+
+## [1.1.1] - 2025-02-22
 ### Added
 - Initialization of the `ketbi-tools` project.
 - Custom cursor functionality with `createCircleCursor`.
+### Patched
+- Refactored the `createCircleCursor` function into a typescript class.
 

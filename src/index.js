@@ -1,2 +1,0 @@
-
-export { createCircleCursor } from './cursor';
