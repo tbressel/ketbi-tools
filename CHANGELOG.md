@@ -24,7 +24,7 @@ _____
 
 
 
-## [1.1.1] - 2025-02-22
+## [1.1.2] - 2025-02-22
 ### Added
 - Initialization of the `ketbi-tools` project.
 - Custom cursor functionality with `createCircleCursor`.
