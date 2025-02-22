@@ -19,10 +19,8 @@ ________
 
 - Change the actual mouse cursos into a circle cursor :
 ```js
-import { CursorCss } from 'ketbi-tools';
-
-// Exécuter la fonction pour créer le curseur personnalisé
-const curstor: CursorCssType = new CursorCss();
+import { CursorCss, CursorCssInterface } from 'ketbi-tools';
+const myBlueCircleCssCursor: CursorCssInterface = new CursorCss();
 ```
 then customizing the cursor by changing the color and size of the circle cursor :
 ```css

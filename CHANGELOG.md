@@ -24,7 +24,7 @@ _____
 
 
 
-## [1.1.2] - 2025-02-22
+## [1.1.5] - 2025-02-22
 ### Added
 - Initialization of the `ketbi-tools` project.
 - Custom cursor functionality with `createCircleCursor`.
@@ -33,4 +33,5 @@ _____
 - Delete unsued files.
 - Create interfaces for the `CursorCss` class.
 - Fix types bugs with Cursor Interface.
+- Update the README.md file.
 
