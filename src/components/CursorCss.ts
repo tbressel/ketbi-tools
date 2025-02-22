@@ -1,12 +1,13 @@
+import { CursorCssInterface } from '../models/CursorCssInterface';
 
 /**
  * Classe Cursor
  * Manage the cursor element
  */
-class CursorCss {
+class CursorCss implements CursorCssInterface {
 
   // cursor event listener datas
-  private cursor: HTMLElement;
+  public cursor: HTMLElement;
 
   constructor() {
     this.cursor = this.createCursorElement("div", "kb-css-cursor", "kb-cssCursor", true);
@@ -54,10 +55,10 @@ class CursorCss {
    * Initializes the cursor by adding an event listener for the 'mousemove' event.
    * The event listener calls the `updateCursorPosition` method to update the cursor's position.
    *
-   * @private
+   * @public
    * @returns {void}
    */
-  private initializeCursor(): void {
+  public initializeCursor(): void {
     document.addEventListener('mousemove', this.updateCursorPosition.bind(this));
   }
 

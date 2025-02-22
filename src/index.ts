@@ -1,4 +1,4 @@
+import CursorCss from './components/CursorCss';
+import { CursorCssInterface } from './models/CursorCssInterface';
 
-import CursorCss from './cursor-css';
-
-export { CursorCss };
+export { CursorCss, CursorCssInterface };

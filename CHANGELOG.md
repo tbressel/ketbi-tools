@@ -30,4 +30,6 @@ _____
 - Custom cursor functionality with `createCircleCursor`.
 ### Patched
 - Refactored the `createCircleCursor` function into a typescript class.
+- Delete unsued files.
+- Create interfaces for the `CursorCss` class.
 
