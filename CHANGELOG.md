@@ -32,4 +32,5 @@ _____
 - Refactored the `createCircleCursor` function into a typescript class.
 - Delete unsued files.
 - Create interfaces for the `CursorCss` class.
+- Fix types bugs with Cursor Interface.
 

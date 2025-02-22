@@ -1,7 +1,8 @@
 {
   "name": "ketbi-tools",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "main": "src/index.js",
+  "types": "src/index.ts",
     "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
