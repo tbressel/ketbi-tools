@@ -1,0 +1,23 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/).
+
+## [Unreleased]
+
+### Added
+- `createCircleCursor` function to create a custom circle-shaped cursor.
+
+### Changed
+- Updated documentation to include usage examples.
+
+### Fixed
+- Fixed a bug where the custom cursor did not correctly follow the mouse on some browsers.
+
+## [1.0.0] - 2023-10-01
+
+### Added
+- Initialization of the `ketbi-tools` project.
+- Custom cursor functionality with `createCircleCursor`.
+
