@@ -3,7 +3,7 @@
   "version": "1.2.5",
   "main": "src/index.js",
   "types": "src/index.ts",
-    "scripts": {
+  "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "front end tools created for ketbi projects",
   "devDependencies": {
+    "sass": "^1.85.0",
     "typescript": "^5.7.3"
   }
 }
