@@ -20,7 +20,9 @@ _____
 
 
 
-
+## [1.1.6] - 2025-02-23
+### Patched
+- Cutomise the element where the cursor will be applied.
 
 
 

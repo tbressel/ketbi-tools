@@ -20,7 +20,9 @@ ________
 - Change the actual mouse cursos into a circle cursor :
 ```js
 import { CursorCss, CursorCssInterface } from 'ketbi-tools';
-const myBlueCircleCssCursor: CursorCssInterface = new CursorCss();
+// choose the element where you want to apply the cursor
+const myCustomCssCursor1: CursorCssInterface = new CursorCss("nav"); 
+const myCustomCssCursor2: CursorCssInterface = new CursorCss("section"); 
 ```
 then customizing the cursor by changing the color and size of the circle cursor :
 ```css

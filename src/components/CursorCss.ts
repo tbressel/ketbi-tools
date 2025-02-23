@@ -6,14 +6,17 @@ import { CursorCssInterface } from '../models/CursorCssInterface';
  */
 class CursorCss implements CursorCssInterface {
 
-  // cursor event listener datas
-  public cursor: HTMLElement;
+    // cursor event listener datas
+    public cursor: HTMLElement;
+    public tag: string;
 
-  constructor() {
-    this.cursor = this.createCursorElement("div", "kb-css-cursor", "kb-cssCursor", true);
-    this.appendCursorToDOM("body");
-    this.initializeCursor();
-  }
+    constructor(tag: string = 'body') {
+      this.tag = tag;
+      this.cursor = this.createCursorElement("div", "kb-css-cursor", "kb-cssCursor", true);
+      this.appendCursorToDOM(this.tag);
+      this.initializeCursor();
+    }
+
 
   /**
    * Creates a new HTML element to be used as a cursor.
@@ -28,7 +31,7 @@ class CursorCss implements CursorCssInterface {
     const cursor = document.createElement(tag);
     cursor.id = idName;
     cursor.className = className;
-    cursor.setAttribute('aria-hidden', ariaHidden as unknown as string);
+    cursor.setAttribute('aria-hidden', ariaHidden.toString());
     return cursor;
   }
 
@@ -51,6 +54,31 @@ class CursorCss implements CursorCssInterface {
     this.cursor.style.top = `${event.pageY}px`;
   }
 
+    /**
+   * Handles the mouse over event to invert colors.
+   *
+   * @param event - The MouseEvent containing the target element.
+   */
+    private handleMouseOver(event: MouseEvent): void {
+      const target = event.target as HTMLElement;
+      if (target && target.tagName !== 'BODY' && target.tagName !== 'HTML') {
+        target.classList.add('invert-colors');
+      }
+    }
+
+
+      /**
+   * Handles the mouse out event to revert colors.
+   *
+   * @param event - The MouseEvent containing the target element.
+   */
+  private handleMouseOut(event: MouseEvent): void {
+    const target = event.target as HTMLElement;
+    if (target && target.tagName !== 'BODY' && target.tagName !== 'HTML') {
+      target.classList.remove('invert-colors');
+    }
+  }
+
   /**
    * Initializes the cursor by adding an event listener for the 'mousemove' event.
    * The event listener calls the `updateCursorPosition` method to update the cursor's position.
@@ -60,6 +88,8 @@ class CursorCss implements CursorCssInterface {
    */
   public initializeCursor(): void {
     document.addEventListener('mousemove', this.updateCursorPosition.bind(this));
+    document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+    document.addEventListener('mouseout', this.handleMouseOut.bind(this));
   }
 
 }
