@@ -18,7 +18,7 @@ _____
 
 
 
-## [1.2.4] - 2025-02-23
+## [1.2.5] - 2025-02-23
 ### Minor
 - Adding methods to zoom, invert or adding text into the cursor.
 - Adding a script to injectv default css classes.
@@ -27,7 +27,7 @@ _____
 - Remove css injection from the cursor class.
 - Fix classe names for the cursor.
 - Fix hendlemousemove method to update the cursor class.
-
+- Update READEME.md file.
 
 
 

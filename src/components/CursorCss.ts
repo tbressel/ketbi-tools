@@ -86,10 +86,10 @@ class CursorCss implements CursorCssInterface {
     const dataSet = target.getAttribute('data-set');
     const text = target.getAttribute('data-text');
 
-    this.cursor.classList.toggle('zoom', dataSet?.includes('zoom') ?? false);
-    this.cursor.classList.toggle('visible', dataSet?.includes('visible') ?? false);
-    this.cursor.classList.toggle('text', dataSet?.includes('text') ?? false);
-    this.cursor.textContent = dataSet?.includes('text') ? text : '';
+    this.cursor.classList.toggle('kb-zoom', dataSet?.includes('kb-zoom') ?? false);
+    this.cursor.classList.toggle('kb-visible', dataSet?.includes('kb-visible') ?? false);
+    this.cursor.classList.toggle('kb-text', dataSet?.includes('kb-text') ?? false);
+    this.cursor.textContent = dataSet?.includes('kb-text') ? text : '';
   }
 
 }
