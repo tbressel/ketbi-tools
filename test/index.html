@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <title>Vite App</title>
+
+
+</head>
+
+<body>
+
+
+
+  <main>
+    <p>
+    <pre><span data-set="visible">
+        - attribut : data-set
+        - valeure = "visible"
+        - Interet UX : Texte visible sous le curseur, permettant un surlignement de texte pour le mettre en evidence
+        - Technique : Les couleurs ne sont pas réellement inversées, techniquement parlant.
+        Il y'a 3 couleures qui influence le texte, la couleur du texte, la couleur de fond et la couleur du curseur.
+        Le texte est simplement rendu en blanc sur fond noir et le curseur est rendu en noir sur fond blanc.
+        Cela donne l'impression que le texte est inversé.
+      </span></pre>
+    </p>
+
+    <p>
+    <pre><span data-set="zoom">
+      - attribut : data-set
+      - valeure = "zoom"
+      - Interet UX : pas franchement utile avec du texte mais plutôt avec une zone ou une image par exemple.
+      Le curseur est zoomé pour signaler quelque chose à l'utilisateur.
+      </span></pre>
+    </p>
+
+
+    <p>
+      <pre><span data-set="zoom visible">
+      - attribut : data-set
+      - valeures = "zoom visible"
+      - Interet UX : En revanche quand on peut mélanger "zoom" ET "visible" pour retrouver un interet de
+        zoomer le curseur et mon trer un texte important. </span></pre>
+      </p>
+
+    <p>
+      <pre><span data-set="text" data-text="EXEMPLE DE TEXTE">
+      - attributs : data-set pour le type de contenu et data-text pour le contenu
+      - valeures = "text" pour l'un et un text pour l'autre.
+      - Interet UX : En revanche quand on peut mélanger "zoom" ET "visible" pour retrouver un interet de
+        zoomer le curseur et mon trer un texte important. 
+      </span></pre>
+    </p>
+
+  </main>
+
+
+  <script type="module" src="./assets/scripts.js"></script>
+</body>
+
+</html>

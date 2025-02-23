@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+  }
+  
+
+  body {
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 1rem;
+  }
+  
+  .kb__css-cursor {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(1); 
+    transition: transform 0.3s ease-in-out; 
+    z-index: 1000;
+  }
+  
+  .zoom {
+    transform: translate(-50%, -50%) scale(3); 
+  }
+  
+  .visible {
+   mix-blend-mode: difference;
+  }
+
+  .text {
+    text-align: center;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    color: black;
+    font-size: 1rem;
+  }
+  
+  .invert {
+    filter: invert(1);
+  }

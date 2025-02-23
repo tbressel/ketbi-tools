@@ -27,18 +27,21 @@ const myCustomCssCursor2: CursorCssInterface = new CursorCss("section");
 then customizing the cursor by changing the color and size of the circle cursor :
 ```css
 
+/* If you want to mask the actual cursor */
 * {
   cursor: none;
 }
 
-.kb-css-cursor {
+/* Build the cursor with an injected div element into the DOM */
+.kb__css-cursor {
+    position: absolute;
+    z-index: 1000;
+    pointer-events: none;
     width: 32px;
     height: 32px;
+    background-color: white;
     border-radius: 50%;
-    background-color: blue;
-    position: absolute;
-    pointer-events: none;
     transform: translate(-50%, -50%);
-    z-index: 1000;
+    transition: transform 0.3s ease-in-out; /* Optional */
 }
 ```

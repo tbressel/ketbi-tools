@@ -18,11 +18,14 @@ _____
 
 
 
-
-
-## [1.1.6] - 2025-02-23
+## [1.2.2] - 2025-02-23
+### Minor
+- Adding methods to zoom, invert or adding text into the cursor.
+- Adding a script to injectv default css classes.
 ### Patched
 - Cutomise the element where the cursor will be applied.
+- Remove css injection from the cursor class.
+
 
 
 
