@@ -1,6 +1,6 @@
 {
   "name": "ketbi-tools",
-  "version": "1.2.2",
+  "version": "1.2.4",
   "main": "src/index.js",
   "types": "src/index.ts",
     "scripts": {

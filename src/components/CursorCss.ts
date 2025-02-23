@@ -24,7 +24,7 @@ class CursorCss implements CursorCssInterface {
 
   constructor(tag: string = 'body') {
     this.tag = tag;
-    this.cursor = this.createCursorElement("div", "kb-css-cursor", "kb-cssCursor", true);
+    this.cursor = this.createCursorElement("div", "kb__cursor", "kb-cursor", true);
     this.appendCursorToDOM(this.tag);
     this.initializeCursor();
   }
@@ -64,7 +64,6 @@ class CursorCss implements CursorCssInterface {
   public initializeCursor(): void {
     document.addEventListener('mousemove', this.updateCursorPosition.bind(this));
     document.addEventListener('mouseover', this.handleMouseOver.bind(this));
-    document.addEventListener('mouseout', this.handleMouseOut.bind(this));
   }
 
   /**
@@ -93,17 +92,6 @@ class CursorCss implements CursorCssInterface {
     this.cursor.textContent = dataSet?.includes('text') ? text : '';
   }
 
-  /**
-   * Handles the mouseout event to reset cursor styles.
-   *
-   * @param event - The MouseEvent containing the target element.
-   */
-  private handleMouseOut(event: MouseEvent): void {
-    const target = event.target as HTMLElement;
-    if (target && !target.classList.contains('kb__cursor-css--zoom')) {
-      this.cursor.style.transform = 'scale(1)';
-    }
-  }
 }
 
 export default CursorCss;
